@@ -1,0 +1,6 @@
+FROM java:8
+VOLUME /tmp
+ADD gs-spring-boot-docker-0.1.0.jar transaction-microservice.jar
+RUN bash -c 'touch /transaction-microservice.jar'
+EXPOSE 8001
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/transaction-microservice.jar"]
