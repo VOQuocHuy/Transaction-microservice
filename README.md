@@ -1,6 +1,4 @@
 # Transaction-microservice
 
-Parking	Singleton	Description
-instance	Parking	 
-getInstance	Parking	Renvoie l'instance unique du parking
-places	ArrayList	Contient les places du parking
+ | 1 header | header 2 | 3 header | 
+ | 1 header | header 2 | 3 header |  
