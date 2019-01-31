@@ -37,14 +37,14 @@
 
 | URL  | Method | Format |
 | ------------- | ------------- | ------------- |
-|/transactions/history  |    GET | XML, JSON  |
-|/transactions/date     |    GET | XML, JSON  |
-|/transactions/type     |    GET | XML, JSON  |
-|/source/{ibansour}/dest/{ibandest}  |    GET | XML, JSON  |
-|/transactions/delete  |    DELETE | XML, JSON  |
-|/transactions/new  |    POST | XML, JSON  |
-|/transactions/update  |    PUT | XML, JSON  |
-|/virement  |    GET | XML, JSON  |
+|/transactions/history  |    **GET** | XML, JSON  |
+|/transactions/date     |   **GET**| XML, JSON  |
+|/transactions/type     |  **GET**| XML, JSON  |
+|/source/{ibansour}/dest/{ibandest}  |    **GET** | XML, JSON  |
+|/transactions/delete  |   **DELETE** | XML, JSON  |
+|/transactions/new  |    **POST** | XML, JSON  |
+|/transactions/update  |    **PUT** | XML, JSON  |
+|/virement  |    **GET** | XML, JSON  |
 
 
 
