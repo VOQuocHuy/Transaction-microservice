@@ -31,7 +31,7 @@
 ## Repository
 | Interface | Description |
 | ------------- | ------------- | 
-| CompteBancaireRepository |     Création de la couche d'accès aux données| 
+| TransactionRepository |     Création de la couche d'accès aux données| 
 
 ## Rest API
 
