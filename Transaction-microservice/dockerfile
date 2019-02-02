@@ -1,0 +1,4 @@
+FROM java:8
+ADD target/transaction-microservice.jar transaction-microservice.jar
+EXPOSE 8001
+ENTRYPOINT exec java -jar transaction-microservice.jar
