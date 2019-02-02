@@ -12,13 +12,12 @@
 	<groupId>fr.dauphine.miageif.msa</groupId>
 	<artifactId>projet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-	<name>projet</name>
+	<name>transaction-microservice</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
-		 <docker.image.prefix>springio</docker.image.prefix>
+		<docker.image.prefix>springio</docker.image.prefix>
 	</properties>
 
 	<dependencies>
@@ -62,14 +61,10 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>0.4.5</version>
+				<version>1.2.0</version>
 				<configuration>
-					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-					<baseImage>java</baseImage>
-					<dockerDirectory>src/main/docker</dockerDirectory>
-					<entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
-					<!-- copy the service's jar file from target into the root directory 
-						of the image -->
+					<imageName>transaction</imageName>
+					<dockerDirectory>docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
@@ -78,12 +73,10 @@
 						</resource>
 					</resources>
 				</configuration>
-				
-		    </plugin>
+			</plugin>
+		</plugins>
 
-	</plugins>
-	
-        <finalName>transaction-microservice</finalName>
+		<finalName>transaction-microservice</finalName>
 	</build>
 
 </project>

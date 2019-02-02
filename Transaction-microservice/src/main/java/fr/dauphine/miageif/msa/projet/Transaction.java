@@ -17,9 +17,9 @@ public class Transaction {
 	@Id 
     @GeneratedValue
     private Long id;
-    @Column(name="IBANdest")
-    private String ibansour;      
     @Column(name="IBANsour")
+    private String ibansour;      
+    @Column(name="IBANdest")
     private String ibandest; 
     @Column(name="typeOPER")
     private String type;    
